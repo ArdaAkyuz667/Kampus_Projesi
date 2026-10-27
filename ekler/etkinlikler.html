@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Spor ve Oyun Geliştirme Kulübü etkinlik takvimi: turnuvalar, atölyeler, Game Jam ve söyleşiler.">
+    <title>Etkinlikler | E-Spor Kulübü</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+</head>
+<body>
+
+    <nav aria-label="Ana menü">
+        <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="etkinlikler.html" aria-current="page">Etkinlikler</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Fikstür ve Atölyeler</h1>
+        <p>Aşağıdan etkinlikleri inceleyebilir, etkinlik başlığına göre arama yapabilirsin.</p>
+    </header>
+
+    <main>
+        
+        <div class="search-container">
+            <label for="searchInput" class="sr-only">Etkinlik başlığında ara</label>
+       <input type="text" id="searchInput" autocomplete="off" placeholder="Etkinlik başlığı ara...">
+<button type="button" class="filter-btn" id="clearBtn">✕ Temizle</button>
+<ul id="oneriKutusu" class="oneri-kutusu" role="listbox" hidden></ul>
+        </div>
+
+        <div class="filters" role="group" aria-label="Kategori filtresi">
+            <button class="filter-btn active" data-filter="hepsi">Tümü</button>
+            <button class="filter-btn" data-filter="turnuva">🏆 Turnuva</button>
+            <button class="filter-btn" data-filter="egitim">💻 Eğitim</button>
+            <button class="filter-btn" data-filter="jam">🚀 Game Jam</button>
+            <button class="filter-btn" data-filter="soylesi">🎤 Söyleşi</button>
+        </div>
+
+        <p class="result-info" id="resultInfo" aria-live="polite"></p>
+
+        <div class="events-grid" id="eventsContainer">
+
+            <article class="card" data-category="turnuva">
+                <div class="ev-media" style="--img: url('images/Wr.jpeg')">
+                    <img src="images/Wr.jpeg" alt="League of Legends: Wild Rift oyun görseli" loading="lazy">
+                    <span class="tag">Turnuva</span>
+                </div>
+                <div class="card-body">
+                    <h3>League of Legends Wild Rift Vadi Savaşları</h3>
+                    <div class="date-location">
+                        <span>📅 <time datetime="2026-11-12">12 Kasım 2026</time></span>
+                        <span>📍 Öğrenci Yaşam Merkezi</span>
+                    </div>
+                    <p>Şampiyonluk heyecanı başlıyor! 5 kişilik takımını kur, vadiye in ve kampüsün en iyisi olduğunu kanıtla. Büyük ödül kazanan takımı bekliyor.</p>
+                    <div class="card-actions"><a class="btn-register" href="https://mail.google.com/mail/?view=cm&amp;to=ardaakyuz477@gmail.com&amp;su=Kay%C4%B1t%3A%20League%20of%20Legends%20Wild%20Rift%20Vadi%20Sava%C5%9Flar%C4%B1&amp;body=Merhaba%2C%20%22League%20of%20Legends%20Wild%20Rift%20Vadi%20Sava%C5%9Flar%C4%B1%22%20etkinli%C4%9Fine%20kat%C4%B1lmak%20istiyorum.%0A%0AAd%20Soyad%3A%0AB%C3%B6l%C3%BCm%3A%0AOkul%20No%3A%0A" target="_blank" rel="noopener" aria-label="League of Legends Wild Rift Vadi Savaşları için kayıt ol">Kayıt Ol</a></div>
+                </div>
+            </article>
+
+            <article class="card" data-category="egitim">
+                <div class="ev-media ev-fill ev-unity">
+                    <img src="images/unity.jpeg" alt="Unity editörü ve Visual Studio Code ekran görüntüsü" loading="lazy">
+                    <span class="tag">Eğitim</span>
+                </div>
+                <div class="card-body">
+                    <h3>Visual Studio Code ile Unity'ye Giriş</h3>
+                    <div class="date-location">
+                        <span>📅 <time datetime="2026-11-18">18 Kasım 2026</time></span>
+                        <span>📍 Bilgisayar Laboratuvarı</span>
+                    </div>
+                    <p>Oyun geliştirmenin temellerini atıyoruz. C# ve Unity kullanarak ilk 2D oyunumuzu sıfırdan tasarlayacağımız bu atölyeye kodlamaya ilgi duyan herkes davetlidir.</p>
+                    <div class="card-actions"><a class="btn-register" href="https://mail.google.com/mail/?view=cm&amp;to=ardaakyuz477@gmail.com&amp;su=Kay%C4%B1t%3A%20Visual%20Studio%20Code%20ile%20Unity%27ye%20Giri%C5%9F&amp;body=Merhaba%2C%20%22Visual%20Studio%20Code%20ile%20Unity%27ye%20Giri%C5%9F%22%20etkinli%C4%9Fine%20kat%C4%B1lmak%20istiyorum.%0A%0AAd%20Soyad%3A%0AB%C3%B6l%C3%BCm%3A%0AOkul%20No%3A%0A" target="_blank" rel="noopener" aria-label="Visual Studio Code ile Unity'ye Giriş için kayıt ol">Kayıt Ol</a></div>
+                </div>
+            </article>
+
+            <article class="card" data-category="turnuva">
+                <div class="ev-media" style="--img: url('images/Mlbb.jpeg')">
+                    <img src="images/Mlbb.jpeg" alt="Mobile Legends: Bang Bang oyun görseli" loading="lazy">
+                    <span class="tag">Turnuva</span>
+                </div>
+                <div class="card-body">
+                    <h3>Mobile Legends Bang Bang Turnuvası</h3>
+                    <div class="date-location">
+                        <span>📅 <time datetime="2026-11-25">25 Kasım 2026</time></span>
+                        <span>📍 Öğrenci Yaşam Merkezi</span>
+                    </div>
+                    <p>Telefondan rekabet ateşini yakıyoruz! Bireysel veya takım olarak katılabileceğin Mobile Legends turnuvamızda dereceli maçların stresini atıyoruz.</p>
+                    <div class="card-actions"><a class="btn-register" href="https://mail.google.com/mail/?view=cm&amp;to=ardaakyuz477@gmail.com&amp;su=Kay%C4%B1t%3A%20Mobile%20Legends%20Bang%20Bang%20Turnuvas%C4%B1&amp;body=Merhaba%2C%20%22Mobile%20Legends%20Bang%20Bang%20Turnuvas%C4%B1%22%20etkinli%C4%9Fine%20kat%C4%B1lmak%20istiyorum.%0A%0AAd%20Soyad%3A%0AB%C3%B6l%C3%BCm%3A%0AOkul%20No%3A%0A" target="_blank" rel="noopener" aria-label="Mobile Legends Bang Bang Turnuvası için kayıt ol">Kayıt Ol</a></div>
+                </div>
+            </article>
+
+            <article class="card" data-category="jam">
+                <div class="ev-media ev-fill">
+                    <img src="images/48.jpg" alt="48 saatlik kampüs game jam etkinliğinde bilgisayar başında çalışan katılımcılar" loading="lazy">
+                    <span class="tag">Game Jam</span>
+                </div>
+                <div class="card-body">
+                    <h3>48 Saatlik Kampüs Game Jam</h3>
+                    <div class="date-location">
+                        <span>📅 <time datetime="2026-12-05">5-7 Aralık 2026</time></span>
+                        <span>📍 BARÜ Teknokent</span>
+                    </div>
+                    <p>Sadece 48 saat içinde verilen temaya uygun en iyi oyunu kim yapacak? Çay, kahve ve pizza eşliğinde kesintisiz kodlama ve tasarım maratonu.</p>
+                    <div class="card-actions"><a class="btn-register" href="https://mail.google.com/mail/?view=cm&amp;to=ardaakyuz477@gmail.com&amp;su=Kay%C4%B1t%3A%2048%20Saatlik%20Kamp%C3%BCs%20Game%20Jam&amp;body=Merhaba%2C%20%2248%20Saatlik%20Kamp%C3%BCs%20Game%20Jam%22%20etkinli%C4%9Fine%20kat%C4%B1lmak%20istiyorum.%0A%0AAd%20Soyad%3A%0AB%C3%B6l%C3%BCm%3A%0AOkul%20No%3A%0A" target="_blank" rel="noopener" aria-label="48 Saatlik Kampüs Game Jam için kayıt ol">Kayıt Ol</a></div>
+                </div>
+            </article>
+
+            <article class="card" data-category="soylesi">
+                <div class="ev-media ev-fill">
+                    <img src="images/Espor.jpg" alt="E-Spor ve Yayıncılık Söyleşisi sahnesinde konuşmacılar ve izleyiciler" loading="lazy">
+                    <span class="tag">Söyleşi</span>
+                </div>
+                <div class="card-body">
+                    <h3>E-Spor ve Yayıncılık Söyleşisi</h3>
+                    <div class="date-location">
+                        <span>📅 <time datetime="2026-12-15">15 Aralık 2026</time></span>
+                        <span>📍 Konferans Salonu</span>
+                    </div>
+                    <p>Kick yayıncılığı, içerik üreticiliği ve profesyonel e-spor arenalarındaki kariyer fırsatları hakkında sektörden sürpriz konuklarla soru-cevap etkinliği.</p>
+                    <div class="card-actions"><a class="btn-register" href="https://mail.google.com/mail/?view=cm&amp;to=ardaakyuz477@gmail.com&amp;su=Kay%C4%B1t%3A%20E-Spor%20ve%20Yay%C4%B1nc%C4%B1l%C4%B1k%20S%C3%B6yle%C5%9Fisi&amp;body=Merhaba%2C%20%22E-Spor%20ve%20Yay%C4%B1nc%C4%B1l%C4%B1k%20S%C3%B6yle%C5%9Fisi%22%20etkinli%C4%9Fine%20kat%C4%B1lmak%20istiyorum.%0A%0AAd%20Soyad%3A%0AB%C3%B6l%C3%BCm%3A%0AOkul%20No%3A%0A" target="_blank" rel="noopener" aria-label="E-Spor ve Yayıncılık Söyleşisi için kayıt ol">Kayıt Ol</a></div>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="no-results" id="noResults">😕 Aradığın kriterlere uygun etkinlik bulunamadı.</p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">Ana Sayfa</a> |
+            <a href="etkinlikler.html">Etkinlikler</a> |
+            <a href="hakkimizda.html">Hakkımızda</a>
+        </p>
+        <p>&copy; 2026 E-Spor &amp; Oyun Geliştirme Kulübü. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
