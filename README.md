@@ -4,7 +4,7 @@ Bartın Üniversitesi E-Spor ve Oyun Geliştirme Kulübü için hazırlanmış, 
 
 **Amaç:** Kampüsteki e-spor ve oyun geliştirme meraklılarını tanıtım, etkinlik takvimi ve arama özelliğiyle tek bir sitede buluşturmak. (BPR201 Haftalık Proje Ödevi 1)
 
-**GitHub repository:** https://github.com/ArdaAkyuz667/Kampus_Projesi  <!-- kendi bağlantını yaz -->  
+**GitHub repository:** https://github.com/ArdaAkyuz667/Kampus_Projesi
 **Canlı site (GitHub Pages):** https://ArdaAkyuz667.github.io/Kampus_Projesi/
 
 ## Sayfalar
